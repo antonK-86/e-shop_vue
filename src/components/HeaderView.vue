@@ -4,7 +4,7 @@
       <div class="header-top-search">
         <img alt="Search" src="@/assets/icons/search.svg" />
       </div>
-      <h1>Avion</h1>
+      <h3>Avion</h3>
       <div class="header-top-right">
         <img class="header-icon" alt="Cart" src="@/assets/icons/cart.svg" />
         <img class="header-icon" alt="Avatar" src="@/assets/icons/user.svg" />
@@ -23,10 +23,12 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+@import "@/styles/vars.scss";
+
 .header {
   height: 132px;
   padding: 0 2.8rem;
-  background: #fff;
+  background: $colorBase;
   caret-color: transparent;
 
   &-top {

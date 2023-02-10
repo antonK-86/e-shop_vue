@@ -9,8 +9,13 @@ import PlantView from "../views/PlantView.vue";
 
 export const routes: Array<RouteRecordRaw> = [
   {
-    name: "Plant pots",
+    name: "Home",
     path: "/",
+    component: HomeView,
+  },
+  {
+    name: "Plant pots",
+    path: "/plant",
     component: PlantView,
   },
   { name: "Ceramics", path: "/ceramics", component: CeramicsView },

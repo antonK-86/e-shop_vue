@@ -1,7 +1,7 @@
 <template>
   <MainLayout>
     <HeaderView>
-      <NavView></NavView>
+      <NavView />
     </HeaderView>
     <router-view />
   </MainLayout>
@@ -24,12 +24,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss">
-@import url("https://fonts.cdnfonts.com/css/satoshi");
-@import url("https://fonts.cdnfonts.com/css/clash-display");
-
-$colorText: #726e8d;
-$colorTitle: #2c3e50;
-$colorActive: #42b983;
+@import "@/styles/vars.scss";
 
 * {
   box-sizing: border-box;
@@ -49,17 +44,32 @@ html {
 }
 
 h1 {
+  font-size: 3.6rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+  font-weight: 400;
+}
+
+h3 {
   font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+h4 {
+  font-size: 2rem;
+  font-weight: 400;
 }
 
 #app {
-  font-family: "Satoshi", sans-serif;
-  /* font-family: "Clash Display", sans-serif; */
-
+  font-family: $fontSatoshi;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: $colorTitle;
+  caret-color: transparent;
 }
 
 nav {
