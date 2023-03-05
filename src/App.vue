@@ -26,7 +26,9 @@ export default defineComponent({
 <style lang="scss">
 @import "@/styles/vars.scss";
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 

@@ -4,7 +4,7 @@ import CeramicsView from "../views/CeramicsView.vue";
 import TablesView from "../views/TablesView.vue";
 import ChairsView from "../views/ChairsView.vue";
 import CrockeryView from "../views/CrockeryView.vue";
-import TablewareView from "../views/TablewareView.vue";
+import UiKit from "../views/UiKit.vue";
 import PlantView from "../views/PlantView.vue";
 
 export const routes: Array<RouteRecordRaw> = [
@@ -22,7 +22,7 @@ export const routes: Array<RouteRecordRaw> = [
   { name: "Tables", path: "/tables", component: TablesView },
   { name: "Chairs", path: "/chairs", component: ChairsView },
   { name: "Crockery", path: "/crockery", component: CrockeryView },
-  { name: "Tableware", path: "/tableware", component: TablewareView },
+  { name: "Tableware", path: "/tableware", component: UiKit },
   {
     path: "/about",
     name: "About",
